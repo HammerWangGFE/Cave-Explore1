@@ -17,10 +17,11 @@ public class TriggerSetText : MonoBehaviour {
 	private GameObject inventoryObject;
 	//private Inventory inv;
 
-	private bool doTheThing;
+	private bool doTheThing = true;
 
-	//void Start()
-	//{
+	void Start()
+	{
+
 	//	inventoryObject = GameObject.FindGameObjectWithTag ("Inventory");
 	//	inv = inventoryObject.GetComponent<Inventory> ();
 	//}
@@ -33,7 +34,7 @@ public class TriggerSetText : MonoBehaviour {
 	//			return true;
 	//	}
 	//	return false;
-	//}
+	}
 
 	void OnTriggerEnter (Collider other)
 	{
@@ -53,10 +54,11 @@ public class TriggerSetText : MonoBehaviour {
 		//}
 		//else
 		//	doTheThing = true;	
-
+		//print("111111");
 
 		if (doTheThing == true)
 		{
+			//print("hahahahah");
 			if (other.tag == "Player")
 			{
 				questTextObject.gameObject.transform.parent.gameObject.SetActive (true);
