@@ -11,16 +11,16 @@ public class TriggerSetText : MonoBehaviour {
 	public float waitTime;
 	public float displayTime;
 
-	public bool itemRequired;
-	public string inventoryItem;
+	//public bool itemRequired;
+	//public string inventoryItem;
 
-	private GameObject inventoryObject;
+	//private GameObject inventoryObject;
 	//private Inventory inv;
 
 	private bool doTheThing = true;
 
-	void Start()
-	{
+	//void Start()
+	//{
 
 	//	inventoryObject = GameObject.FindGameObjectWithTag ("Inventory");
 	//	inv = inventoryObject.GetComponent<Inventory> ();
@@ -34,7 +34,7 @@ public class TriggerSetText : MonoBehaviour {
 	//			return true;
 	//	}
 	//	return false;
-	}
+	//}
 
 	void OnTriggerEnter (Collider other)
 	{
@@ -43,7 +43,7 @@ public class TriggerSetText : MonoBehaviour {
 
 	IEnumerator WaitTimer(Collider other)
 	{
-		//yield return new WaitForSeconds (waitTime);
+		yield return new WaitForSeconds (waitTime);
 
 		//if (itemRequired == true)
 		//{

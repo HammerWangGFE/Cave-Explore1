@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\FirstPerson_Weight.cs" />
     <Compile Include="Assets\Scripts\GaintAnts.cs" />
     <Compile Include="Assets\Scripts\Glove.cs" />
+    <Compile Include="Assets\Scripts\Introduction.cs" />
     <Compile Include="Assets\Scripts\Mainmenu.cs" />
     <Compile Include="Assets\Scripts\Rigidbody_Manipulator.cs" />
     <Compile Include="Assets\Scripts\TriggerDisplay.cs" />
