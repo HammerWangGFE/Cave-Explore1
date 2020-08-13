@@ -65,7 +65,9 @@
   <ItemGroup>
     <Compile Include="Assets\FlowerPower\Scripts\Grenade.cs" />
     <Compile Include="Assets\Scripts\BloodMushroom.cs" />
+    <Compile Include="Assets\Scripts\BloodMushroomBulet.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\EnergyBarController.cs" />
     <Compile Include="Assets\Scripts\FirstPerson_CollisionRegister.cs" />
     <Compile Include="Assets\Scripts\FirstPerson_Controller.cs" />
     <Compile Include="Assets\Scripts\FirstPerson_Weight.cs" />
@@ -73,6 +75,7 @@
     <Compile Include="Assets\Scripts\Glove.cs" />
     <Compile Include="Assets\Scripts\Introduction.cs" />
     <Compile Include="Assets\Scripts\Mainmenu.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Rigidbody_Manipulator.cs" />
     <Compile Include="Assets\Scripts\TriggerDisplay.cs" />
     <Compile Include="Assets\Scripts\TriggerSetText.cs" />

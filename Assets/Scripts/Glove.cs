@@ -4,33 +4,27 @@ using UnityEngine;
 
 public class Glove : MonoBehaviour
 {
+    //shoot evergy bullet, take -1 from Energy Bar;
+    //Can't shoot last bulle
+    public EnergyBarController EnergyBar;
+
     public GameObject firePoint;
     public GameObject bulletPrefab;
     public float launchPower = 2;
 
-    public float refireRate;
-    private float timePassed;
-    private bool canShoot;
-
-    private void Start()
-    {
-        canShoot = true;
-    }
-
     void Update()
     {
-        if ((Input.GetMouseButtonDown(0)) && (canShoot))
+        if (Input.GetMouseButtonDown(0) && (EnergyBar.Energy > 1))
         {
+
             Shoot();
-            canShoot = false;
-            timePassed = 0.0f;
-        }
 
-        timePassed += Time.deltaTime;
+            if (EnergyBar)
+            {
+                EnergyBar.onTakeDamage(1);
+                print(EnergyBar.Energy);
+            }
 
-        if (timePassed >= refireRate)
-        {
-            canShoot = true;
         }
     }
 

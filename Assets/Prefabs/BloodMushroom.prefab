@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 8400249541759770173}
   - component: {fileID: 6717135205669273426}
   - component: {fileID: 1092039996}
-  - component: {fileID: 1092040003}
-  - component: {fileID: 1092040002}
   m_Layer: 0
   m_Name: BloodMushroom
   m_TagString: BloodMushroom
@@ -35,6 +33,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8917932418071689485}
+  - {fileID: 7830559281669344984}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1102,33 +1101,11 @@ MonoBehaviour:
   maxHealth: 21
   health: 21
   whiteColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!65 &1092040003
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 617381856549826624}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.504281, y: 2.8797798, z: 7.878462}
-  m_Center: {x: 4.655294, y: -0.4398899, z: 0}
---- !u!114 &1092040002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 617381856549826624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfda98931eabe5747813b09d42d5bba7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerColour: {r: 0.9019608, g: 0.5882353, b: 0.19607843, a: 0.39215687}
-  triggerWireColour: {r: 0, g: 0, b: 0, a: 0}
+  firePoint: {fileID: 7999016252603985393}
+  bulletPrefab: {fileID: 8579968340134100527, guid: 6eb413e779bf160469833fd6e189ecab,
+    type: 3}
+  launchPower: 20
+  canShoot: 1
 --- !u!1 &1956294325148092797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1922,3 +1899,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
+--- !u!1 &7999016252603985393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7830559281669344984}
+  m_Layer: 0
+  m_Name: BloodMushroomFirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7830559281669344984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7999016252603985393}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3958012118707056667}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

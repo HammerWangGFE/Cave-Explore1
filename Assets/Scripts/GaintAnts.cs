@@ -20,11 +20,6 @@ public class GaintAnts : MonoBehaviour
         orginialColor = myRender.material.color;
 
         health = maxHealth;
-
-        //foreach (Transform child in this.transform)
-        //{
-        //    Debug.Log(child.name);
-        //}
     }
 
     // Update is called once per frame
@@ -41,7 +36,7 @@ public class GaintAnts : MonoBehaviour
         {
             foreach (Transform child in this.transform)
             {
-                child.gameObject.GetComponent<Renderer>().material.color = whiteColor;
+                child.gameObject.GetComponent<Renderer>().material.color = Color.black;
             }
         }
         
