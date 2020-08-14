@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EnergyBarController : MonoBehaviour
 {
@@ -13,5 +14,11 @@ public class EnergyBarController : MonoBehaviour
     {
         Energy = Energy - damage;
         EnergyBar.fillAmount = Energy / startEnergy;
+
+        if (Energy<=1)
+        {
+            SceneManager.LoadScene(2);
+        }
+
     }
 }

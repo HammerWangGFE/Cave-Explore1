@@ -10,15 +10,15 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //print("happened?");
-        //if (other.gameObject.tag == "GaintAnts")
-        //{
-        print("happened?");
-        if (EnergyBar)
+        if (other.gameObject.tag == "GaintAnts")
         {
-            EnergyBar.onTakeDamage(8);
-            print(other.gameObject.tag);
+        //print("happened?");
+            if (EnergyBar)
+            {
+                EnergyBar.onTakeDamage(8);
+                print(other.gameObject.tag);
+            }
         }
-        //}
     }
     
 }

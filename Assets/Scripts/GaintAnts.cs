@@ -36,6 +36,8 @@ public class GaintAnts : MonoBehaviour
         {
             foreach (Transform child in this.transform)
             {
+                this.GetComponent<IsMoving>().isMoving = false;
+                this.GetComponent<IsMoving>().NMA.destination = this.transform.position;
                 child.gameObject.GetComponent<Renderer>().material.color = Color.black;
             }
         }

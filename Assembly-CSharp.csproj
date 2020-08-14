@@ -63,10 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FlowerPower\Scripts\Grenade.cs" />
     <Compile Include="Assets\Scripts\BloodMushroom.cs" />
     <Compile Include="Assets\Scripts\BloodMushroomBulet.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\EndScene.cs" />
     <Compile Include="Assets\Scripts\EnergyBarController.cs" />
     <Compile Include="Assets\Scripts\FirstPerson_CollisionRegister.cs" />
     <Compile Include="Assets\Scripts\FirstPerson_Controller.cs" />
@@ -74,10 +74,12 @@
     <Compile Include="Assets\Scripts\GaintAnts.cs" />
     <Compile Include="Assets\Scripts\Glove.cs" />
     <Compile Include="Assets\Scripts\Introduction.cs" />
+    <Compile Include="Assets\Scripts\IsMoving.cs" />
     <Compile Include="Assets\Scripts\Mainmenu.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Rigidbody_Manipulator.cs" />
     <Compile Include="Assets\Scripts\TriggerDisplay.cs" />
+    <Compile Include="Assets\Scripts\TriggerGaintAnts1.cs" />
     <Compile Include="Assets\Scripts\TriggerSetText.cs" />
     <Compile Include="Assets\Scripts\TriggerToggle.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />

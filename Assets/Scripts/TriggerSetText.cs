@@ -38,7 +38,10 @@ public class TriggerSetText : MonoBehaviour {
 
 	void OnTriggerEnter (Collider other)
 	{
-		StartCoroutine (WaitTimer (other));
+		if (other.tag == "Player")
+		{
+			StartCoroutine(WaitTimer(other));
+		}
 	}
 
 	IEnumerator WaitTimer(Collider other)

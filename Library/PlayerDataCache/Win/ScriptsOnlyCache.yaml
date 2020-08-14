@@ -2,15 +2,23 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - BloodMushroom
+    - BloodMushroomBulet
     - Bullet
+    - EnergyBarController
     - FirstPerson_CollisionRegister
     - FirstPerson_Controller
     - FirstPerson_Weight
     - GaintAnts
     - Glove
+    - Introduction
+    - IsMoving
     - Mainmenu
+    - PlayerController
     - Rigidbody_Manipulator
     - TriggerDisplay
+    - TriggerGaintAnts1
+    - TriggerSetText
+    - TriggerToggle
     Unity.ProBuilder.Editor.dll:
     - UnityEditor.ProBuilder.EditorToolbar
     - UnityEditor.ProBuilder.ProBuilderEditor
@@ -65,37 +73,77 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 10090}
+      Script: {instanceID: 9742}
     - Class: 114
-      Script: {instanceID: 10206}
+      Script: {instanceID: 9952}
     - Class: 114
-      Script: {instanceID: 10298}
+      Script: {instanceID: 10006}
     - Class: 114
-      Script: {instanceID: 10442}
+      Script: {instanceID: 10092}
     - Class: 114
-      Script: {instanceID: 10596}
+      Script: {instanceID: 10208}
     - Class: 114
-      Script: {instanceID: 10636}
+      Script: {instanceID: 10300}
     - Class: 114
-      Script: {instanceID: 10826}
+      Script: {instanceID: 10362}
     - Class: 114
-      Script: {instanceID: 10942}
+      Script: {instanceID: 10432}
     - Class: 114
-      Script: {instanceID: 11372}
+      Script: {instanceID: 10446}
     - Class: 114
-      Script: {instanceID: 12148}
+      Script: {instanceID: 10504}
+    - Class: 114
+      Script: {instanceID: 10600}
+    - Class: 114
+      Script: {instanceID: 10640}
+    - Class: 114
+      Script: {instanceID: 10762}
+    - Class: 114
+      Script: {instanceID: 10832}
+    - Class: 114
+      Script: {instanceID: 10856}
+    - Class: 114
+      Script: {instanceID: 10950}
+    - Class: 114
+      Script: {instanceID: 10996}
+    - Class: 114
+      Script: {instanceID: 11288}
+    - Class: 114
+      Script: {instanceID: 11324}
+    - Class: 114
+      Script: {instanceID: 11384}
+    - Class: 114
+      Script: {instanceID: 11426}
+    - Class: 114
+      Script: {instanceID: 11454}
+    - Class: 114
+      Script: {instanceID: 11530}
+    - Class: 114
+      Script: {instanceID: 11602}
+    - Class: 114
+      Script: {instanceID: 12072}
+    - Class: 114
+      Script: {instanceID: 12162}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -105,7 +153,76 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 195
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 238
+      Script: {instanceID: 0}
     - Class: 258
+      Script: {instanceID: 0}
+    Assets/Scenes/EndScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9742}
+    - Class: 114
+      Script: {instanceID: 9952}
+    - Class: 114
+      Script: {instanceID: 10006}
+    - Class: 114
+      Script: {instanceID: 10504}
+    - Class: 114
+      Script: {instanceID: 10910}
+    - Class: 114
+      Script: {instanceID: 10990}
+    - Class: 114
+      Script: {instanceID: 11288}
+    - Class: 114
+      Script: {instanceID: 11530}
+    - Class: 114
+      Script: {instanceID: 11602}
+    - Class: 114
+      Script: {instanceID: 12072}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/StartScene1.unity:
     - Class: 1
@@ -137,29 +254,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9742}
     - Class: 114
-      Script: {instanceID: 9950}
+      Script: {instanceID: 9952}
     - Class: 114
-      Script: {instanceID: 10004}
+      Script: {instanceID: 10006}
     - Class: 114
-      Script: {instanceID: 10500}
+      Script: {instanceID: 10504}
     - Class: 114
-      Script: {instanceID: 10540}
+      Script: {instanceID: 10544}
     - Class: 114
-      Script: {instanceID: 10902}
+      Script: {instanceID: 10910}
     - Class: 114
-      Script: {instanceID: 10982}
+      Script: {instanceID: 10990}
     - Class: 114
-      Script: {instanceID: 11278}
+      Script: {instanceID: 11288}
     - Class: 114
-      Script: {instanceID: 11296}
+      Script: {instanceID: 11306}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11530}
     - Class: 114
-      Script: {instanceID: 11586}
+      Script: {instanceID: 11602}
     - Class: 114
-      Script: {instanceID: 11796}
+      Script: {instanceID: 11812}
     - Class: 114
-      Script: {instanceID: 12058}
+      Script: {instanceID: 12072}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -199,6 +316,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EndScene
   - hash:
       serializedVersion: 2
       Hash: 9c7c87712e298256d276eb96e02a57b1
@@ -351,6 +474,12 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 341056bf703c4138244451a9a660c49d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerController
+  - hash:
+      serializedVersion: 2
       Hash: 32f6d1d5a09e5c94c633a32edd3e6836
     assemblyName: Unity.ProBuilder.dll
     namespaceName: UnityEngine.ProBuilder
@@ -375,7 +504,7 @@ ScriptsOnlyBuild:
     className: TriggerToggle
   - hash:
       serializedVersion: 2
-      Hash: c58c41846ca1efdce12dd81a30be4268
+      Hash: e005b0b1052f38d58a96135d24c64279
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BloodMushroom
@@ -435,6 +564,12 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: b1edf86e7ef87de2b3a29a7b686e8980
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Introduction
+  - hash:
+      serializedVersion: 2
       Hash: e9389e944eb81a3a9df56fcdb09ce6a9
     assemblyName: Unity.ProBuilder.dll
     namespaceName: UnityEngine.ProBuilder
@@ -465,6 +600,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
+      Hash: 092bbdac079c5a779bc4fad65ed9a0e5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TriggerSetText
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -493,6 +634,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 341056bf703c4138244451a9a660c49d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BloodMushroomBulet
   - hash:
       serializedVersion: 2
       Hash: feb9a5a121d15fa3654d4e50a5233045
@@ -555,6 +702,12 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 6d949660fbfa7f2e28c4dc67493c4ab7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TriggerGaintAnts1
+  - hash:
+      serializedVersion: 2
       Hash: c58c41846ca1efdce12dd81a30be4268
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -571,6 +724,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.ProBuilder.dll
     namespaceName: UnityEngine.ProBuilder
     className: Entity
+  - hash:
+      serializedVersion: 2
+      Hash: dd26a3c76fcd82d0823f720a41c669ff
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnergyBarController
+  - hash:
+      serializedVersion: 2
+      Hash: aaf8b79cf5748dd01fd7d57d8e8ef8ce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IsMoving
   - hash:
       serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
@@ -625,12 +790,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayModeRunnerCallback
-  - hash:
-      serializedVersion: 2
-      Hash: fb3fbaecb046b3c6b6938f47959ed49f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Grenade
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -705,19 +864,14 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: fd1d0edecd2561e5a7bae0cd6188fe7a
+      Hash: dac751603e5d2a70f743241d3bba6142
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Glove
-  - hash:
-      serializedVersion: 2
-      Hash: 69645a2b537b6ecb8abf8cfb2befa3ee
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TriggerSetText
   platform: 5
   scenePathNames:
   - Assets/Scenes/StartScene1.unity
   - Assets/Scenes/CaveExplore1.unity
+  - Assets/Scenes/EndScene.unity
   playerPath: C:/Users/Hammer/Desktop/Unit 4 Narrative Design/Cave Explore1/Build/Cave
     Explore1.exe
