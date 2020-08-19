@@ -16,11 +16,11 @@ public class Bullet : MonoBehaviour
         //print("..............");
         if (other.gameObject.tag =="GaintAnts")
         {
-            other.gameObject.GetComponent<GaintAnts>().ChangeColor(3);
+            other.gameObject.GetComponent<GaintAnts>().ChangeColor(4);
             //print("Hello");
         }else if (other.gameObject.tag == "BloodMushroom")
         {
-            other.gameObject.GetComponent<BloodMushroom>().ChangeColor(3);
+            other.gameObject.GetComponent<BloodMushroom>().ChangeColor(4);
         }
 
         Destroy(this.gameObject);

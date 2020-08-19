@@ -123,14 +123,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47ec657445ca85c49944b0954525d5ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 21
-  health: 21
-  whiteColor: {r: 0, g: 0, b: 0, a: 0}
+  maxHealth: 10
+  health: 10
+  whiteColor: {r: 0.25490198, g: 0.25490198, b: 0.25490198, a: 1}
   firePoint: {fileID: 1968757728}
   bulletPrefab: {fileID: 8579968340134100527, guid: 6eb413e779bf160469833fd6e189ecab,
     type: 3}
   launchPower: 2
   canShoot: 0
+  isAlive: 1
 --- !u!64 &1544793476695416076
 MeshCollider:
   m_ObjectHideFlags: 0

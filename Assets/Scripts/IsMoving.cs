@@ -13,11 +13,8 @@ public class IsMoving : MonoBehaviour
     void Start()
     {
         NMA = GetComponent<NavMeshAgent>();
-
-        //NMA.destination = endNode.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (isMoving)
