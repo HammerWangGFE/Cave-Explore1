@@ -14,7 +14,7 @@ public class Glove : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && (EnergyBar.Energy > 1))
+        if (Input.GetMouseButtonDown(0) && (EnergyBar.Energy > 0))
         {
 
             Shoot();
@@ -22,7 +22,7 @@ public class Glove : MonoBehaviour
             if (EnergyBar)
             {
                 EnergyBar.onTakeDamage(1);
-                print(EnergyBar.Energy);
+                //print(EnergyBar.Energy);
             }
 
         }

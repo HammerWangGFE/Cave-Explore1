@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 96675673}
   - component: {fileID: 96675674}
   - component: {fileID: 985770007}
+  - component: {fileID: 985770006}
   m_Layer: 0
   m_Name: GaintAnts (1)
   m_TagString: GaintAnts
@@ -31,7 +32,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593463111199752557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.61, y: 2.44, z: 9}
+  m_LocalPosition: {x: -11.61, y: 2.44, z: 6.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8229625356778611853}
@@ -101,8 +102,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d38695da2422b1b469ca6ce375824d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 30
-  health: 30
+  GameController: {fileID: 0}
+  maxHealth: 27
+  health: 27
   whiteColor: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
 --- !u!65 &96675668
 BoxCollider:
@@ -153,7 +155,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 3.8794518
-  m_Speed: 3.5
+  m_Speed: 7
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -165,6 +167,21 @@ NavMeshAgent:
   m_BaseOffset: 1.3842198
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &985770006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593463111199752557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf7dd5bac731ab43bcbd2e3f7564763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NMA: {fileID: 0}
+  player: {fileID: 0}
+  isMoving: 0
 --- !u!1 &3791094290076418378
 GameObject:
   m_ObjectHideFlags: 0

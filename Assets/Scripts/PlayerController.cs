@@ -9,10 +9,9 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //print("happened?");
+        print("happened?");
         if (other.gameObject.tag == "GaintAnts")
         {
-        //print("happened?");
             if (EnergyBar)
             {
                 EnergyBar.onTakeDamage(8);

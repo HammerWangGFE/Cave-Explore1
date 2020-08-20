@@ -37,7 +37,7 @@ public class BloodMushroom : MonoBehaviour
         {
             health = health - damageToTake;
             float temp = (float)(health * 1.0 / maxHealth);
-            print("Bloodmushroom:" + temp);
+            //print("Bloodmushroom:" + temp);
             myRender.material.color = Color.Lerp(whiteColor, orginialColor, temp);
             
         }
@@ -46,8 +46,13 @@ public class BloodMushroom : MonoBehaviour
             if (isAlive)
             {
                 this.transform.localScale = new Vector3(0.3f, 1.5f, 0.3f);
-                this.transform.position += new Vector3(0f, -1f, 0f);
+                this.transform.position += new Vector3(0f, -1f, 0f); 
+                this.gameObject.transform.GetChild(1).gameObject.SetActive(true);
+                this.gameObject.transform.GetChild(2).gameObject.SetActive(true);
+                this.gameObject.transform.GetChild(2).gameObject.transform.localScale = new Vector3(3f,0.6f,3f);
+                this.gameObject.transform.GetChild(2).gameObject.transform.position += new Vector3(3f, 2f, 0f);
                 isAlive = false;
+                
             }
             
         }

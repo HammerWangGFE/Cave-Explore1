@@ -5,12 +5,14 @@ using UnityEngine;
 public class GaintAnts : MonoBehaviour
 {
     //health == current health.
+    public GameObject GameController;
     public int maxHealth = 30;
     public int health;
 
     //dead is while white
     public Color whiteColor;
     private Color orginialColor;
+    private bool onceOnly= true;
     Renderer myRender;
 
     // Start is called before the first frame update
@@ -34,10 +36,17 @@ public class GaintAnts : MonoBehaviour
         }
         else
         {
+            if (onceOnly)
+            {
+                GameController.GetComponent<GameController>().GaintAntsDead();
+            }
+            onceOnly = false;
+            this.GetComponent<IsMoving>().isMoving = false;
+            this.GetComponent<IsMoving>().NMA.destination = this.transform.position;
+            
+
             foreach (Transform child in this.transform)
             {
-                this.GetComponent<IsMoving>().isMoving = false;
-                this.GetComponent<IsMoving>().NMA.destination = this.transform.position;
                 child.gameObject.GetComponent<Renderer>().material.color = Color.black;
             }
         }

@@ -22,13 +22,13 @@ public class EnergyBarController : MonoBehaviour
         Energy = Energy - damage;
         EnergyBarShow();
 
-        if (Energy<=1)
+        if (Energy<=0)
         {
             SceneManager.LoadScene(2);
         }
     }
 
-    private void EnergyBarShow()
+    public void EnergyBarShow()
     {
         EnergyBar.fillAmount = Energy / MaxEnergy;
         //EnergyBar.GetComponentInChildren<Text>().text = "Energy:   " + Energy + "/" + MaxEnergy;

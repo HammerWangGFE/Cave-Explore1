@@ -68,10 +68,12 @@
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\EndScene.cs" />
     <Compile Include="Assets\Scripts\EnergyBarController.cs" />
+    <Compile Include="Assets\Scripts\EnergyCore.cs" />
     <Compile Include="Assets\Scripts\FirstPerson_CollisionRegister.cs" />
     <Compile Include="Assets\Scripts\FirstPerson_Controller.cs" />
     <Compile Include="Assets\Scripts\FirstPerson_Weight.cs" />
     <Compile Include="Assets\Scripts\GaintAnts.cs" />
+    <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Glove.cs" />
     <Compile Include="Assets\Scripts\Introduction.cs" />
     <Compile Include="Assets\Scripts\IsMoving.cs" />
