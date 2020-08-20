@@ -5,10 +5,12 @@ ScriptsOnlyBuild:
     - BloodMushroomBulet
     - Bullet
     - EnergyBarController
+    - EnergyCore
     - FirstPerson_CollisionRegister
     - FirstPerson_Controller
     - FirstPerson_Weight
     - GaintAnts
+    - GameController
     - Glove
     - Introduction
     - IsMoving
@@ -77,6 +79,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 91
@@ -102,43 +108,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10362}
     - Class: 114
-      Script: {instanceID: 10432}
+      Script: {instanceID: 10396}
     - Class: 114
-      Script: {instanceID: 10446}
+      Script: {instanceID: 10408}
     - Class: 114
-      Script: {instanceID: 10504}
+      Script: {instanceID: 10436}
     - Class: 114
-      Script: {instanceID: 10600}
+      Script: {instanceID: 10450}
     - Class: 114
-      Script: {instanceID: 10640}
+      Script: {instanceID: 10508}
     - Class: 114
-      Script: {instanceID: 10762}
+      Script: {instanceID: 10604}
     - Class: 114
-      Script: {instanceID: 10832}
+      Script: {instanceID: 10644}
     - Class: 114
-      Script: {instanceID: 10856}
+      Script: {instanceID: 10766}
     - Class: 114
-      Script: {instanceID: 10950}
+      Script: {instanceID: 10836}
     - Class: 114
-      Script: {instanceID: 10996}
+      Script: {instanceID: 10860}
     - Class: 114
-      Script: {instanceID: 11288}
+      Script: {instanceID: 10954}
     - Class: 114
-      Script: {instanceID: 11324}
+      Script: {instanceID: 11000}
     - Class: 114
-      Script: {instanceID: 11384}
+      Script: {instanceID: 11328}
     - Class: 114
-      Script: {instanceID: 11426}
+      Script: {instanceID: 11388}
     - Class: 114
-      Script: {instanceID: 11454}
+      Script: {instanceID: 11430}
     - Class: 114
-      Script: {instanceID: 11530}
+      Script: {instanceID: 11458}
     - Class: 114
-      Script: {instanceID: 11602}
+      Script: {instanceID: 11606}
     - Class: 114
-      Script: {instanceID: 12072}
+      Script: {instanceID: 12076}
     - Class: 114
-      Script: {instanceID: 12162}
+      Script: {instanceID: 12166}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -156,6 +162,10 @@ ScriptsOnlyBuild:
     - Class: 195
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -182,9 +192,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -197,19 +213,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10006}
     - Class: 114
-      Script: {instanceID: 10504}
+      Script: {instanceID: 10508}
     - Class: 114
-      Script: {instanceID: 10910}
+      Script: {instanceID: 10914}
     - Class: 114
-      Script: {instanceID: 10990}
+      Script: {instanceID: 10994}
     - Class: 114
-      Script: {instanceID: 11288}
+      Script: {instanceID: 11292}
     - Class: 114
-      Script: {instanceID: 11530}
+      Script: {instanceID: 11534}
     - Class: 114
-      Script: {instanceID: 11602}
+      Script: {instanceID: 11606}
     - Class: 114
-      Script: {instanceID: 12072}
+      Script: {instanceID: 12076}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -258,25 +274,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10006}
     - Class: 114
-      Script: {instanceID: 10504}
+      Script: {instanceID: 10508}
     - Class: 114
-      Script: {instanceID: 10544}
+      Script: {instanceID: 10548}
     - Class: 114
-      Script: {instanceID: 10910}
+      Script: {instanceID: 10914}
     - Class: 114
-      Script: {instanceID: 10990}
+      Script: {instanceID: 10994}
     - Class: 114
-      Script: {instanceID: 11288}
+      Script: {instanceID: 11292}
     - Class: 114
-      Script: {instanceID: 11306}
+      Script: {instanceID: 11310}
     - Class: 114
-      Script: {instanceID: 11530}
+      Script: {instanceID: 11534}
     - Class: 114
-      Script: {instanceID: 11602}
+      Script: {instanceID: 11606}
     - Class: 114
-      Script: {instanceID: 11812}
+      Script: {instanceID: 11816}
     - Class: 114
-      Script: {instanceID: 12072}
+      Script: {instanceID: 12076}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -490,6 +506,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: aacc7345b12342d159e0e75709860cd3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnergyCore
+  - hash:
+      serializedVersion: 2
+      Hash: ab62327fcfc53bcd4474c1ab43c0c756
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameController
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -708,7 +736,7 @@ ScriptsOnlyBuild:
     className: TriggerGaintAnts1
   - hash:
       serializedVersion: 2
-      Hash: c58c41846ca1efdce12dd81a30be4268
+      Hash: 48bfd7d4823a9a766f61454ae42dff41
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GaintAnts
@@ -726,7 +754,7 @@ ScriptsOnlyBuild:
     className: Entity
   - hash:
       serializedVersion: 2
-      Hash: dd26a3c76fcd82d0823f720a41c669ff
+      Hash: 5f90dc53993e3d640c67c0ddbb9e51a5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnergyBarController

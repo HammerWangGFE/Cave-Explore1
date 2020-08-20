@@ -45,7 +45,7 @@ public class Introduction : MonoBehaviour
 			//=====================================================
 			questTextObject.gameObject.transform.parent.gameObject.SetActive(true);
 			//welcome
-			questText = "Welcome to 2100";
+			questText = "Welcome to 2100.";
 			questTextObject.text = questText;
 			yield return new WaitForSeconds(2);
 			//move
@@ -62,7 +62,7 @@ public class Introduction : MonoBehaviour
 			yield return new WaitForSeconds(2);
 
 			//unabled door2 animations by destroy it. so it will not appear again.
-			Destroy(door2Object);
+			//Destroy(door2Object);
 			Destroy(door3Object);
 		}
 
